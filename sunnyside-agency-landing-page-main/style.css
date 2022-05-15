@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    max-width: 1440px ;
+    font-size: 18px;
+    font-family: Barlow;
+    font-weight: 600;
+    background-color: hsl(0, 41%, 97%);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    height: 6em;
+    width: 100%;
+}
+nav #logo{
+    margin-left: 2.2em;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    margin-right: 2.2em;
+}
+nav ul li {
+    list-style: none;
+    padding-right: 2.7em;
+    border-radius: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+#contact {
+    background-color: white;
+    padding: .7em 1.7em;
+    border-radius: 30px;
+    font-family: Fraunces;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+}
+#contact:hover {
+    background-color: rgb(241, 241, 241);
+}
+#contact a{
+    color: hsl(212, 27%, 19%);
+}
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+    background-image: url(images/desktop/image-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header h1{
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    margin-top: 3em;
+    color: white;
+    font-family: Fraunces;
+    font-weight: 900;
+    line-height: 5em;
+}
+#arrow{
+    width: 1.5em;
+}
+.contents-container{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 3fr 3fr 3fr;
+    height: 260vh;
+}
+.content1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 6em;
+    background-color: hsl(0, 12%, 97%);
+}
+.content1 h3 {
+    font-family: Fraunces ;
+    font-weight: bold;
+    font-size: 2.3em;
+    width: 8em;
+}
+.content1 p{
+    line-height: 1.5;
+    color: rgb(138, 138, 138);
+}
+.content1 a{
+    text-decoration: none;
+}
+.content1-image{
+    background-image: url(images/desktop/image-transform.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.content2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: hsl(0, 12%, 97%);
+    padding: 6em;
+}
+.content2 h3 {
+    font-family: Fraunces ;
+    font-weight: bold;
+    font-size: 2.3em;
+    width: 10em;
+}
+.content2 p{
+    line-height: 1.5;
+    color: rgb(138, 138, 138);
+}
+.content2 a{
+    text-decoration: none;
+}
+.content2-image{
+    background-image: url(images/desktop/image-stand-out.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url(images/desktop/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5em 7em;
+    background-size: cover; 
+    color:  hsl(167, 40%, 24%) ;
+
+}.content3 h3 {
+    font-family: Fraunces;
+    line-height: 3;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.content3 p{
+    text-align: center;
+    line-height: 1.5em;
+}
+.content4{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url(images/desktop/image-photography.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5em 7em;
+    background-size: cover;
+    color: hsl(198, 62%, 26%);
+}
+.content4 h3 {
+    font-family: Fraunces;
+    line-height: 3;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.content4 p{
+    text-align: center;
+    line-height: 1.5em;
+}
+.Testimonials{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2em 1fr;
+    grid-template-areas:
+    "heading heading heading" 
+    "testimony1 testimony2 testimony3" ;
+    grid-column-gap: 1.3em;
+    height: 70vh;
+    padding: 0 8em ;
+    margin: 7em 0 5em 0;
+    color: rgb(107, 107, 107);
+}
+.Testimonials h4 {
+    grid-area: heading;
+    text-transform: uppercase;
+    font-family: "Fraunces Bold";
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 4px;
+    color: rgb(128, 128, 128);
+}
+.testimony-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.testimony-container img{
+    width: 70px;
+    border-radius: 50%;
+}
+.testimony-container p{
+    text-align: center;
+    line-height: 1.5;
+}
+.testimony-container label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label h5{
+    font-family: Fraunces;
+    font-size: 20px;
+    line-height: 2;
+    color: black;
+}
+.client-title{
+    font-size: 13px;
+    color: rgb(124, 124, 124);
+}
+.testimony1{
+    grid-area: testimony1;
+}
+.testimony2{
+    grid-area: testimony2;
+}
+.testimony3{
+    grid-area: testimony3
+}
+.gallery-container{
+    height: 60vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.gallery-image1{
+    background-color: hsl(199, 83%, 65%);
+    background-image: url("images/desktop/image-gallery-milkbottles.jpg");
+    background-size: cover;
+    background-position: center;
+}.gallery-image2{
+    background-color: hsl(199, 78%, 61%);
+    background-image: url("images/desktop/image-gallery-orange.jpg");
+    background-size: cover;
+    background-position: center;
+}.gallery-image3{
+    background-color: hsl(199, 77%, 57%);
+    background-image: url("images/desktop/image-gallery-cone.jpg");
+    background-size: cover;
+    background-position: center;
+}.gallery-image4{
+    background-color: hsl(199, 68%, 56%);
+    background-image: url("images/desktop/image-gallery-sugarcubes.jpg");
+    background-size: cover;
+    background-position: center;
+}
+footer{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:hsl(168, 40%, 65%);
+}
+footer ul{
+    display: flex;
+}
+footer ul li{
+    padding: 0 1.5em;
+    list-style: none;
+}
+footer a {
+    color: #34776a;
+    text-decoration: none;
+}
+.footer-icons{
+    display: flex;
+    justify-content: space-around;
+    width: 10em;
+}
+.attribution {
+     font-size: 11px; 
+     text-align: center; 
+     color: #34776a;
+    }
+.attribution a { color: hsl(228, 45%, 44%); }
